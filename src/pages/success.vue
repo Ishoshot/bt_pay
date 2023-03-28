@@ -26,14 +26,14 @@
       <main class="mx-auto relative ms-sm-auto col-lg-12 px-0">
         <div class="py-4 flex flex-col">
           <div class="mx-auto">
-            <img class="img-fluid" src="public/logo.png" width="150" height="150" />
+            <img class="img-fluid" src="/public/logo.png" width="150" height="150" />
           </div>
         </div>
 
-        <div class="container-fluid flex flex-col">
+        <div class="container-fluid flex flex-col" v-if="payStore.plan">
           <div class="box mt-5 mx-auto p-4">
             <div class="">
-              <img class="img-fluid mx-auto" src="public/checkmark_sucess.gif" width="100" height="100" />
+              <img class="img-fluid mx-auto" src="/public/checkmark_sucess.gif" width="100" height="100" />
               <h1 class="text-2xl text-center my-4 font-bold">Payment Successful</h1>
               <p>Hi {{ payStore.userDetails.firstname }}, </p>
               <p class="mt-3">Your transaction was successful. </p>

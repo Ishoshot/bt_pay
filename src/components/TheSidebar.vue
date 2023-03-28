@@ -5,7 +5,7 @@
   <aside class="w-auto" aria-label="Sidebar">
     <div class="px-3 py-4 bg-gray-100 dark:bg-dark-700 h-screen flex flex-col">
       <div class="mx-auto">
-        <img class="img-fluid" src="public/logo.png" width="150" height="150" />
+        <img class="img-fluid" src="/public/logo.png" width="150" height="150" />
       </div>
       <div class="stepper d-flex flex-column mt-5">
         <h1 class="page-title mb-5">Complete Your payment in Three Steps</h1>

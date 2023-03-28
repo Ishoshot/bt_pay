@@ -5,7 +5,7 @@
   <aside class="w-auto" aria-label="Sidebar">
     <div class="py-4 bg-gray-100 dark:bg-dark-900 flex flex-col">
       <div class="mx-auto">
-        <img class="img-fluid" src="public/logo.png" width="150" height="150" />
+        <img class="img-fluid" src="/public/logo.png" width="150" height="150" />
       </div>
       <div class="d-none d-md-block">
       <h1 class="page-title text-2xl px-3 my-4 text-center">Complete your payment in three simple steps</h1>
