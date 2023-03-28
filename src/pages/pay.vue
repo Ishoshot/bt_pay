@@ -89,8 +89,8 @@ import { nanoid } from "nanoid";
       amountError.value = 'Amount must be less than 20 characters';
     } else if (isNaN(amount.value)) {
       amountError.value = 'Amount must be a number';
-    } else if (amount.value < 10) {
-      amountError.value = 'Amount must be greater than 100';
+    } else if (amount.value < 50) {
+      amountError.value = 'Amount must be greater than 50';
     } else {
       amountError.value = '';
     }
