@@ -114,7 +114,7 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
-    amount.value = amount.value;
+    metadata.amount = amount.value;
     if (isFormValid()) {
       amount.value = parseInt(amount.value);
       payStore.saveUserDetails(firstName.value, lastName.value, email.value, amount.value);
@@ -125,7 +125,7 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
-    amount.value = amount.value;
+    metadata.amount = amount.value;
     let serviceCharge = 0;
     const percentage = 0.015;
     amount.value = parseInt(amount.value);
@@ -273,7 +273,7 @@ const isFormValid = () => {
                     :disabled="!isFormValid()"
                     :hidden="!isLinkValid && ref_id"
                     buttonText="Proceed to Payment"
-                    :publicKey="publicKey"
+                    :publicKey="publicKe"
                     :email="email"
                     :amount="(amount + calculateServiceCharge()) * 100"
                     :metadata="metadata"
