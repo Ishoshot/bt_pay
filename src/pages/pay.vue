@@ -114,7 +114,7 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
-    metadata.amount = amount.value;
+    metadata.amount = amount.value * 100;
     if (isFormValid()) {
       amount.value = parseInt(amount.value);
       payStore.saveUserDetails(firstName.value, lastName.value, email.value, amount.value);
@@ -125,7 +125,7 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
-    metadata.amount = amount.value;
+    metadata.amount = amount.value * 100;
     let serviceCharge = 0;
     const percentage = 0.015;
     amount.value = parseInt(amount.value);
