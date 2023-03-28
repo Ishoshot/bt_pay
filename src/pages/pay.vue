@@ -129,9 +129,11 @@ const isFormValid = () => {
     amount.value = parseInt(amount.value);
 
     if (amount.value < 2500) {
-      serviceCharge = amount.value * percentage;
+      let total = (amount.value) / (1 - percentage);
+      serviceCharge = total - amount.value;
     } else {
-      serviceCharge = (amount.value * percentage) + 100;
+      let total = (amount.value + 100) / (1 - percentage);
+      serviceCharge = total - amount.value;
     }
 
     if (serviceCharge > 2000) {
@@ -139,7 +141,7 @@ const isFormValid = () => {
     }
 
     //round up to whole number
-    serviceCharge = Math.ceil(serviceCharge);
+    serviceCharge = Math.ceil(serviceCharge + 1);
 
     return serviceCharge;
 }
