@@ -273,7 +273,7 @@ const isFormValid = () => {
                     :disabled="!isFormValid()"
                     :hidden="!isLinkValid && ref_id"
                     buttonText="Proceed to Payment"
-                    :publicKey="publicKe"
+                    :publicKey="publicKey"
                     :email="email"
                     :amount="(amount + calculateServiceCharge()) * 100"
                     :metadata="metadata"
