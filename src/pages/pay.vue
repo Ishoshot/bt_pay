@@ -49,6 +49,7 @@ import { nanoid } from "nanoid";
     medium: "web",
     firstname: firstName.value,
     lastname: lastName.value,
+    amount: amount.value,
     plan_id: plan_id,
   };
 
@@ -113,10 +114,10 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
+    amount.value = amount.value;
     if (isFormValid()) {
       amount.value = parseInt(amount.value);
       payStore.saveUserDetails(firstName.value, lastName.value, email.value, amount.value);
-
     }
   };
 
@@ -124,6 +125,7 @@ const isFormValid = () => {
     metadata.firstname = firstName.value;
     metadata.lastname = lastName.value;
     email.value = email.value;
+    amount.value = amount.value;
     let serviceCharge = 0;
     const percentage = 0.015;
     amount.value = parseInt(amount.value);
@@ -168,6 +170,7 @@ const isFormValid = () => {
     firstName.value = payStore.userDetails.firstname;
     lastName.value = payStore.userDetails.lastname;
     email.value = payStore.userDetails.email;
+    amount.value = payStore.userDetails.amount;
   });
 
 </script>
