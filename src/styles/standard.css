@@ -1,0 +1,8 @@
+/*
+ * Globals
+ */
+
+body{
+  background-color: inherit !important;
+  transition: 0.2s all;
+}
