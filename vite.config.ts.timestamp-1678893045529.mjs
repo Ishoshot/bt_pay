@@ -81,7 +81,7 @@ var vite_config_default = defineConfig({
     }),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "safari-pinned-tab.svg"],
+      includeAssets: ["favicon.ico", "safari-pinned-tab.svg"],
       manifest: {
         name: "Vitesse",
         short_name: "Vitesse",
