@@ -189,7 +189,7 @@ const isFormValid = () => {
         </div>
 
         <div class="main-content px-3" v-if="selectedPlan">
-          <h1 class="title my-5">2. Provide Payment Information</h1>
+          <h1 class="title my-5">Provide Payment Information</h1>
 
           <!-- PAYMENT LINK NOT ACTIVE -->
           <div v-if="!isLinkValid && ref_id" class="alert mb-5 alert-danger alert-dismissible fade show" role="alert">
@@ -207,8 +207,8 @@ const isFormValid = () => {
                   {{ selectedPlan.name.substring(0, 2).toUpperCase() }}
                 </p>
                 <div class="d-flex flex-column mx-3">
-                  <p class="plan_name">{{ selectedPlan.name }}</p>
-                  <p class="plan_description">Invite code: {{ selectedPlan.invite_code }}</p>
+                  <p class="plan_name dark:text-gray-200">{{ selectedPlan.name }}</p>
+                  <p class="plan_description dark:text-gray-200">Invite code: {{ selectedPlan.invite_code }}</p>
                 </div>
               </div>
               <!--  -->
@@ -233,13 +233,13 @@ const isFormValid = () => {
 
                <div class="form-group col-12 col-md-6 my-2">
                   <label for="firstName" class="my-1">First name</label>
-                  <input type="text" v-model="firstName" name="" id="" class="form-control" placeholder="Enter First Name" required @keyup="isFormValid()">
+                  <input type="text" v-model="firstName" name="" id="" class="form-control dark:bg-dark-400 dark:text-gray-300" placeholder="Enter First Name" required @keyup="isFormValid()">
                   <span class="error-msg" v-if="firstNameError">{{ firstNameError }}</span>
                 </div>
 
                 <div class="form-group col-12 col-md-6 my-2">
                   <label for="lastName" class="my-1">Last name</label>
-                  <input type="text" v-model="lastName" name="" id="" class="form-control" placeholder="Enter Last Name" required @keyup="isFormValid()">
+                  <input type="text" v-model="lastName" name="" id="" class="form-control dark:bg-dark-400 dark:text-gray-300" placeholder="Enter Last Name" required @keyup="isFormValid()">
                   <span class="error-msg" v-if="lastNameError">{{ lastNameError }}</span>
                 </div>
               </div>
@@ -249,13 +249,13 @@ const isFormValid = () => {
               <div class="row">
                 <div class="form-group col-12 col-md-6 my-2">
                   <label for="email" class="my-1">Email Address</label>
-                  <input type="email" v-model="email" name="" id="" class="form-control" placeholder="Enter Email Address " required @keyup="isFormValid()">
+                  <input type="email" v-model="email" name="" id="" class="form-control dark:bg-dark-400 dark:text-gray-300" placeholder="Enter Email Address " required @keyup="isFormValid()">
                   <span class="error-msg" v-if="emailError">{{ emailError }}</span>
                 </div>
 
                 <div class="form-group col-12 col-md-6 my-2">
                   <label for="amount" class="my-1">Amount</label>
-                  <input type="number" v-model="amount" name="" id="" class="form-control" placeholder="Enter an Amount" required @keyup="calculateServiceCharge()">
+                  <input type="number" v-model="amount" name="" id="" class="form-control dark:bg-dark-400 dark:text-gray-300" placeholder="Enter an Amount" required @keyup="calculateServiceCharge()">
                   <span class="error-msg" v-if="amountError">{{ amountError }}</span>
                     <ul class="service-msg mt-1 ml-1" v-if="calculateServiceCharge()">
                       <li>Amount -- <b>{{ amount.toLocaleString('en-US', { style: 'currency', currency: 'NGN' }) }}</b></li>
@@ -267,7 +267,7 @@ const isFormValid = () => {
 
 
               <!-- button -->
-              <div class="d-flex justify-content-end">
+              <div class="d-flex justify-content-center">
                 <paystack
                     buttonClass="button btn-proceed mt-4"
                     :disabled="!isFormValid()"
@@ -283,6 +283,10 @@ const isFormValid = () => {
                   ></paystack>
               </div>
             </form>
+          </div>
+
+           <div class="fixed bottom-0 right-0 mt-5 mr-3">
+            <FloatinButton />
           </div>
 
           <!-- payament is secured -->
@@ -349,16 +353,6 @@ const isFormValid = () => {
 .plan_description {
   font-size: 12px !important;
   font-weight: 400 !important;
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.badge {
-  font-size: 10px !important;
-  background-color: #c08c12a3 !important;
-  border: 1px solid #fff !important;
-  padding: 5px !important;
-  border-radius: 5px !important;
-  color: #ffffff !important;
 }
 
 .btn-proceed {
@@ -378,7 +372,7 @@ const isFormValid = () => {
 
 .form-control::placeholder {
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.7);
+  color: inherit;
 }
 
 .form-control:focus {
@@ -388,7 +382,7 @@ const isFormValid = () => {
 
 .form-control {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.7);
+  /* color: rgba(0, 0, 0, 0.7); */
   font-size: 15px;
   padding:10px;
   margin-top: 3px;

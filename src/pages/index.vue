@@ -32,6 +32,8 @@ onBeforeMount(() => {
       }
       //save to store
       payStore.selectedPlan = selectedPlan.value;
+
+      goToPay();
     };
 
      const selectPlanHandler = (plan) => {
@@ -66,10 +68,10 @@ onBeforeMount(() => {
         </div>
 
         <div class="main-content px-3">
-          <h1 class="title mt-5">1. Select Savings Group</h1>
+          <h1 class="title mt-5">Select Savings Group</h1>
 
           <div class="search-container">
-            <div class="input-box">
+            <div class="input-box dark:bg-dark-500">
               <i class="uil uil-search"></i>
               <input
                 type="text"
@@ -80,18 +82,18 @@ onBeforeMount(() => {
             </div>
           </div>
 
-          <div class="bg-gray-100 px-2 py-1 rounded mt-3">
+          <div class="bg-gray-100 dark:bg-dark-500 px-2 py-1 rounded mt-5">
           <div class="scrolling-box px-0">
             <div class="container-fluid">
               <!-- loop through plans and display in small cards -->
               <div class="row">
                 <div
-                  class="col-lg-3 h-auto my-2 p-0 bg-none"
+                  class="col-lg-3 dark:bg-dark-500 h-auto my-2 p-0 bg-none"
                   v-for="plan in plans"
                   :key="plan.id"
                   @click="selectPlanHandler(plan)"
                 >
-                  <div class="box px-2 mx-1 py-3 rounded">
+                  <div class="box dark:bg-dark-900 px-2 mx-1 py-3 rounded">
                     <div
                       v-if="selectedPlan.id !== plan.id"
                       class="float-right dot bg-gray-300"
@@ -102,27 +104,24 @@ onBeforeMount(() => {
                     ></div>
                     <p class="badge mt-5">{{ plan.plan_model.name }}</p>
                     <p class="plan_name">{{ plan.name }}</p>
-                    <p class="plan_description">{{ plan.description }}</p>
+                    <!-- <p class="plan_description">{{ plan.description }}</p> -->
                   </div>
                 </div>
               </div>
               <!-- Empty plans -->
               <div v-if="!plans.length" class="row">
                 <div class="col-lg-12 h-auto my-2 p-0 bg-none">
-                  <div class="box-not-found px-2 mx-3 py-3 rounded">
-                    <p class="plan_name">No plans found</p>
+                  <div class="box-not-found dark:bg-dark-900 px-3 mx-2 py-3 rounded">
+                    <p class="plan_name">Oops! No plans found</p>
                   </div>
                 </div>
                 </div>
             </div>
-          </div></div>
-
-          <div v-if="selectedPlan.id" class="d-flex justify-content-end mt-4">
-            <button class="btn-proceed" @click="goToPay()">Proceed</button>
+          </div>
           </div>
         </div>
 
-         <div class="fixed bottom-0 right-0 m-4">
+         <div class="fixed bottom-0 right-0 mt-5 mr-3">
           <FloatinButton />
         </div>
       </main>

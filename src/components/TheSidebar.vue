@@ -57,7 +57,7 @@
   background: transparent !important;
   color: #c08b12 !important;
   box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
-    -8px -8px 16px 0 rgba(255, 255, 255, 0.55) !important;
+    -2px -2px 6px 0 rgba(255, 255, 255, 0.55) !important;
 }
 .stepper .line {
   width: 2px;

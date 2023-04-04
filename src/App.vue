@@ -8,7 +8,7 @@ useHead({
     { name: 'description', content: 'The revolutionary AI technology that connects you with the information you need, when you need it' },
     {
       name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+      content: computed(() => isDark.value ? '#000' : '#ffffff'),
     },
   ],
   link: [
