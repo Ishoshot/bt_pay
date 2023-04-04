@@ -3,9 +3,9 @@
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'buckstrybe_pay',
+  title: 'BucksTrybe Pay - Simplify Group Contributions, Save Together and Bond Better',
   meta: [
-    { name: 'description', content: 'The revolutionary AI technology that connects you with the information you need, when you need it' },
+    { name: 'description', content: 'BucksTrybe is an all-encompassing solution for groups and couples who want to save collectively.' },
     {
       name: 'theme-color',
       content: computed(() => isDark.value ? '#000' : '#ffffff'),
@@ -14,8 +14,8 @@ useHead({
   link: [
     {
       rel: 'icon',
-      type: 'image/svg+xml',
-      href: computed(() => preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg'),
+      type: 'image/ico',
+      href: computed(() => preferredDark.value ? '/favicon``.ico' : '/favicon.ico'),
     },
   ],
 })
