@@ -195,7 +195,7 @@ const isFormValid = () => {
           <div v-if="!isLinkValid && ref_id" class="alert mb-5 alert-danger alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             </button>
-            <strong>INVALID PAYMENT LINK! </strong> <br/> The link you are trying to use is invalid. Please contact the group admin. However, you can still make a payment to the group. <button class=" btn-link" @click="()=>{isLinkValid = !isLinkValid}">Click here</button>
+            <strong>INVALID PAYMENT LINK! </strong> <br/> The link you are trying to use is invalid. Please contact the group admin. However, you can still make a contribution to the group. <button class=" btn-link" @click="()=>{isLinkValid = !isLinkValid}">Click here</button>
           </div>
 
           <!--  -->

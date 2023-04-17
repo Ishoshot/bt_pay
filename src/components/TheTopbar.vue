@@ -8,8 +8,8 @@
         <img class="img-fluid" src="/public/logo.png" width="150" height="150" />
       </div>
       <div class="d-none d-md-block">
-      <h1 class="page-title text-2xl px-3 my-4 text-center">Complete your payment in three simple steps</h1>
-      <div class="stepper d-flex flex-md-row flex-column mt-3 mx-auto px-3">
+      <h1 class="page-title text-2xl px-3 my-4 text-center">Complete your contribution in three simple steps</h1>
+      <div class="stepper d-flex flex-md-row justify-content-md-center flex-column mt-3 mx-auto px-3">
         <div class="d-flex mb-1">
           <div class="d-flex flex-column pr-4 align-items-center">
             <div class="rounded-circle py-2 px-3 text-white mb-1">1</div>
@@ -17,7 +17,7 @@
           <div>
             <h2 class="title pt-2">Provide Your Informations</h2>
             <p class="lead">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div>
             <h2 class="title pt-2">Provide Your Informations</h2>
             <p class="lead">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@
           <div>
             <h2 class="title pt-2">We Process Your Payment</h2>
             <p class="lead">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>

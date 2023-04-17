@@ -8,7 +8,7 @@
         <img class="img-fluid" src="/public/logo.png" width="150" height="150" />
       </div>
       <div class="stepper d-flex flex-column mt-5">
-        <h1 class="page-title mb-5">Complete Your payment in Three Steps</h1>
+        <h1 class="page-title mb-5">Complete your contribution in three simple steps</h1>
         <div class="d-flex mb-1">
           <div class="d-flex flex-column pr-4 align-items-center">
             <div class="rounded-circle py-2 px-3 text-white mb-1">1</div>
@@ -17,7 +17,7 @@
           <div>
             <h2 class="title pt-2">Select Savings Group</h2>
             <p class="lead bt-pb-10">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>
@@ -27,9 +27,9 @@
             <div class="line h-100"></div>
           </div>
           <div>
-            <h2 class="title pt-2">Provide Your Informations</h2>
+            <h2 class="title pt-2">Provide Your Information</h2>
             <p class="lead bt-pb-10">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>
@@ -39,9 +39,9 @@
             <div class="line h-100 d-none"></div>
           </div>
           <div>
-            <h2 class="title pt-2">We Process Your Payment</h2>
+            <h2 class="title pt-2">We Process Your Contribution</h2>
             <p class="lead bt-pb-10">
-              Choose your website name & create repository
+              <!-- Choose your website name & create repository -->
             </p>
           </div>
         </div>
